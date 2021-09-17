@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' href='index.css'>
+        
+    </head>
+    <body>
+        <title>HTMLRequests</title>
+        <header>
+            <div class='header'>
+                <h1>Learning XMLHTTP</h2>
+                <h1 style='text-decoration: underline;'>Practice Code</h1>
+                <h2 id='time'></h2>
+            </div>
+            <hr>
+        </header>
+        <main>
+            <section class='datamuse mainSections'>
+                <h2>Ryhming words</h2>
+                <h3>Input a word you want to rhyme</h3>
+                <input id='input1'>
+                <button onclick='getSuggestions()'>Enter</button>
+                <p id='rhymeP'></p>
+            </section>
+            <section class='randomPic mainSections'>
+                <h2>Random Picture from Unsplash</h2>
+                <h3>Click to generate a random image</h3>
+                <button style='display: block;' id='randomImg' onclick='getImage()'>Generate</button>
+                <img id='img1' src=''>
+            </section>
+            <section class='randomPic mainSections ipsum' id='randomcolor'>
+                <h2>Random Picture from Lorum Picsum</h2>
+                <h3>Click to generate a random image</h3>
+                <button style='display: block;' id='randomImg' onclick='getImage2()'>Generate</button>
+                <h2 id='random'></h2>
+                <img id='img2' src=''>
+            </section>
+        </main>
+        <script src='index.js'></script>
+    </body>
+</html>
